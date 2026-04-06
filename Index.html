@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Poster</title>
+    <style>
+        /* 1. The Canvas: Define the poster size (e.g., A4 ratio) */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        .poster {
+            width: 400px;
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1000') no-repeat center/cover;
+            color: white;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        /* 2. Typography Hierarchy */
+        .headline {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin: 0;
+            border-left: 8px solid #ffde00;
+            padding-left: 20px;
+        }
+
+        .details {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .date {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .location {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster">
+        <h1 class="headline">Design<br>Future<br>2026</h1>
+        
+        <div class="details">
+            <span class="date">APRIL 20-22</span>
+            <div class="location">Innovation Center | Hall B</div>
+        </div>
+    </div>
+
+</body>
+</html>
